@@ -2,4 +2,6 @@
 
 # Ignore all unzipped dataset files; take up too much space. Feel free to work with the files in your own directories.
 */dataset0.json
+*/dataset1.json
+*/dataset2.json
 
