@@ -2,6 +2,8 @@
 
 This project explores the use of Machine Learning methods to detect m6a RNA modifications from Nanopore Direct RNA Sequencing data, as part of NUS module DSA4262: Sense-making Case Analysis: Health and Medicine.
 
+This project was done by: Arnold, Jia Hui, Duocai, Amanda <i>
+
 # Table of Contents
 - **[Running Prediction Software](#running-prediction-software)**<br>
     - **[System Requirements](#system-requirements)**<br>
