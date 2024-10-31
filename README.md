@@ -1,4 +1,4 @@
-# DSA4262 Project: Prediction of m6A RNA modifications from direct RNA-Seq data
+# DSA4262 Project: Prediction of m6A RNA Modifications from Direct RNA-Seq Data
 
 This project explores the use of Machine Learning methods to detect m6a RNA modifications from Nanopore Direct RNA Sequencing data, as part of NUS module DSA4262: Sense-making Case Analysis: Health and Medicine.
 
@@ -13,6 +13,7 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
 # Running Prediction Software
 
 ## System Requirements
+This software requires Python 3.8 to run. To install Python, please click here: <link>www.youtube.com/</link>
 
 ## Prerequisites Installation
 
