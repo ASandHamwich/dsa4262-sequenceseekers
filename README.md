@@ -18,11 +18,24 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
 # Installing Prediction Software
 
 ## System Requirements
-This software requires Python 3.8 to run. To install Python, please click here: <link>www.youtube.com/</link>
+This software requires an Ubuntu system to run. 
 
 ## Prerequisites Installation
+_This installation guide recommends that you are running this software on an AWS remote Ubuntu instance._
+
+To install all necessary software and packages, ensure that `setup.sh` and `requirements.txt` are in the same directory. 
+
+Run the following Shell script in your terminal as such: 
+```
+bash setup.sh
+```
+
+This installs Python 3.8, as well as all the necessary packages needed for running the prediction software.
 
 ## Installation of Prediction Software
+To install and use this prediction software, ensure that you pull the following files: 
+1. alskdjfja
+2. lqkwejkladf
 
 # Running Prediction Software
 
