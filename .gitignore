@@ -1,12 +1,11 @@
 .DS_Store
 
 # Ignore all unzipped dataset files; take up too much space. Feel free to work with the files in your own directories.
-*/dataset0.json
-*/dataset1.json
-*/dataset2.json
-*.json
+*dataset0.json
+*dataset1.json
+*dataset2.json
 
-*/dataset0.json.gz
-*/dataset1.json.gz
-*/dataset2.json.gz
-*.json.gz
+*dataset0.json.gz
+*dataset1.json.gz
+*dataset2.json.gz
+*json.gz
