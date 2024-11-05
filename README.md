@@ -68,7 +68,7 @@ bash predict.sh <path-to-json-file>
 ```
 
 _(Optional)_
-If you want to run each script separately, you may do so with
+If you wish to run each script separately, you may do so with
 ```
 python3 data-prep.py <path-to-json-file>
 python3 prediction-script.py <path-to-cleaned-data-csv-file>
