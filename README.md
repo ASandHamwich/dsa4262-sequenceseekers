@@ -30,6 +30,7 @@ This software requires an Ubuntu system to run. On an AWS remote instance, we re
 To install all necessary software and packages, ensure that `setup.sh` and `requirements.txt` are in the same directory. 
 
 Run the following Shell script in your terminal as such: 
+
 ```
 bash setup.sh
 ```
@@ -42,15 +43,16 @@ To install and use this prediction software, ensure that you pull the following 
 2. `prediction/prediction_script`
 3. `prediction/prediction_notebooks`
 
-
-`prediction_assets` is necessary for the scripts and notebooks to work; do ensure that the file exists in the same subdirectory as either `prediction_scripts` or `prediction_notebooks`.
-
-_For ease of use, simply pull the `prediction` directory._
+_For ease of use, simply pull and use the whole `prediction` directory._
 
 # Running Prediction Software
-To begin, ensure that you have your `data.json` file in a subdirectory.
+To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
+
+`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the file exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
+
+_For those new to running Jupyter on remote instances, an additional README.md has been included in `prediction_notebooks` for your reference as a brief guide._
 
 ## Running the Scripts
 `prediction_script` contains 
@@ -84,11 +86,21 @@ into the same subdirectory as `clean_data.csv`.
 If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
 
 ## Running the Python Notebooks
+
 ### Input
-To run the notebooks, navigate to the `prediction_notebooks` directory. 
+The data preparation step `prediction-data-preprocessing.ipynb` takes in the data in a JSON format and processes it into a CSV file, which is then taken into `prediction-notebook.ipynb` for predicting.
 
 ### Execution Commands
+First, navigate to the `prediction_notebooks` directory to access both `prediction-data-preprocessing.ipynb` and `prediction-notebook.ipynb`.
 
+Ensure that the paths of the data JSON file for `prediction-data-preprocessing.ipynb` and the cleaned data CSV file for `prediction-notebook.ipynb` correspond correctly to each file. 
+<img width="1070" alt="Screenshot 2024-11-05 at 11 39 17 PM" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
+<img width="1072" alt="Screenshot 2024-11-05 at 11 42 28 PM" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
+
+To run the commands, press the Run buttons on each Python cell in the notebooks. 
 ### Output
+`prediction-data-preprocessing.ipynb` creates the cleaned data CSV file in the same subdirectory as the initial data JSON file. 
+
+`prediction-notebook.ipynb` creates `pred_results.csv` in the same subdirectory as the cleaned data CSV file. 
 
 # Software License
