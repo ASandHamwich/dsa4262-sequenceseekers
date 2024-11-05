@@ -42,6 +42,7 @@ To install and use this prediction software, ensure that you pull the following 
 1. `prediction/prediction_assets`
 2. `prediction/prediction_script`
 3. `prediction/prediction_notebooks`
+4. `prediction/sample_prediction`
 
 _For ease of use, simply pull and use the whole `prediction` directory._
 
@@ -51,6 +52,8 @@ To begin, ensure that you have your `data.json` file in its own subdirectory. Th
 `prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the file exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
+
+A test dataset has been provided under `prediction/sample_prediction`. 
 
 _For those new to running Jupyter on remote instances, an additional README.md has been included in `prediction_notebooks` for your reference as a brief guide._
 
