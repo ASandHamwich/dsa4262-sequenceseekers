@@ -21,10 +21,10 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
 - **[Software License](#software-license)**<br>
 
 # Installing Prediction Software
-_This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._
+_This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._ 
 
 ## System Requirements
-This software requires an Ubuntu system to run. 
+This software requires an Ubuntu system to run. On an AWS remote instance, we recommend running a large instance with more CPU processing power - at least `t3.2xlarge`.
 
 ## Prerequisites Installation
 To install all necessary software and packages, ensure that `setup.sh` and `requirements.txt` are in the same directory. 
