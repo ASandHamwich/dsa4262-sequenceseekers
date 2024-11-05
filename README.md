@@ -59,17 +59,33 @@ There are two methods of running the prediction software: either by using script
 3. `predict.sh` - `bash` script for running the full workflow
    
 ### Input
+The data preparation step `data-prep.py` takes in the data in a JSON format and processes it, which is then piped as a CSV file into the `prediction-script.py` for predicting.
 
 ### Execution Commands
-To run the full workflow, activate the bash script with this command:
+To run the full workflow, navigate to the `prediction_script` directory and activate the bash script with this command:
 ```
 bash predict.sh <path-to-json-file>
 ```
 
+_(Optional)_
+If you want to run each script separately, you may do so with
+```
+python3 data-prep.py <path-to-json-file>
+python3 prediction-script.py <path-to-cleaned-data-csv-file>
+```
+
 ### Output
+The data preparation step `data-prep.py` outputs the cleaned data CSV file `clean_data.csv` in the same subdirectory as the data JSON file.
+The prediction step `prediction-script.py` outputs 
+1. `pred_results.csv` - the prediction probability results in CSV format;
+2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity
+into the same subdirectory as `clean_data.csv`.
+
+If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
 
 ## Running the Python Notebooks
 ### Input
+To run the notebooks, navigate to the `prediction_notebooks` directory. 
 
 ### Execution Commands
 
