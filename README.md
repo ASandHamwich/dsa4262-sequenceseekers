@@ -38,13 +38,14 @@ bash setup.sh
 This installs Python 3.8, as well as all the necessary packages needed for running the prediction software.
 
 ## Installation of Prediction Software
-To install and use this prediction software, ensure that you pull the following files from the `prediction` directory: 
-1. `prediction/prediction_assets`
-2. `prediction/prediction_script`
-3. `prediction/prediction_notebooks`
-4. `prediction/sample_prediction`
+To install and use this prediction software, ensure that you pull the `prediction` directory from the repository.
 
-_For ease of use, simply pull and use the whole `prediction` directory._
+`prediction` contains these 4 folders:
+1. `prediction/prediction_assets`: contains the necessary assets for running the prediction model;
+2. `prediction/prediction_script`: contains the scripts for generating the predictions;
+3. `prediction/prediction_notebooks`: contains notebooks for generating the predictions;
+4. `prediction/sample_prediction`: sample data for testing.
+
 
 # Running Prediction Software
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
@@ -83,7 +84,8 @@ python3 prediction-script.py <path-to-cleaned-data-csv-file>
 The data preparation step `data-prep.py` outputs the cleaned data CSV file `clean_data.csv` in the same subdirectory as the data JSON file.
 The prediction step `prediction-script.py` outputs 
 1. `pred_results.csv` - the prediction probability results in CSV format;
-2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity
+2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity![d1](https://github.com/user-attachments/assets/118af245-b7b1-4bc9-b37d-df06fb95c2e8)
+
 into the same subdirectory as `clean_data.csv`.
 
 If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
