@@ -98,7 +98,10 @@ The prediction step `prediction-script.py` outputs
 If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
 
 ## Running the Python Notebooks
-
+`prediction_notebooks` contains
+1. `prediction-data-preprocessing.ipynb`: data preprocessing notebook
+2. `prediction-notebook.ipynb`: prediction notebook
+   
 ### Input
 The data preparation step `prediction-data-preprocessing.ipynb` takes in the data in a JSON format and processes it into a CSV file, which is then taken into `prediction-notebook.ipynb` for predicting.
 
