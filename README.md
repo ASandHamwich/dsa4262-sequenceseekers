@@ -18,7 +18,6 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
         - **[Input](#input)**<br>
         - **[Execution Commands](#execution-commands)**<br>
         - **[Output](#output)**<br>
-- **[Software License](#software-license)**<br>
 
 # Installing Prediction Software
 _This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._ 
