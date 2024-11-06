@@ -27,7 +27,7 @@ _This installation guide recommends (and assumes) that you are running this soft
 This software requires an Ubuntu system to run. On an AWS remote instance, we recommend running a large instance with more CPU processing power - at least `t3.2xlarge`.
 
 ## Prerequisites Installation
-To install all necessary software and packages, ensure that `setup.sh` and `requirements.txt` are in the same directory. 
+Begin by pulling `setup.sh` and `requirements.txt` into the same directory. This is required to install all necessary software and packages.
 
 Run the following Shell script in your terminal as such: 
 
@@ -49,7 +49,7 @@ _For ease of use, simply pull and use the whole `prediction` directory._
 # Running Prediction Software
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
 
-`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the file exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
+`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
 
