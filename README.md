@@ -49,7 +49,7 @@ This installs Python 3.8.10, as well as all the necessary packages needed for ru
 
 
 # Running Prediction Software
-If you have uploaded the predictions folder as a whole, this whole section should not be an issue and you may skip. <br>
+If you have uploaded the predictions folder as a whole, this whole section should not be an issue and you may skip and move directly to the section "Execution Commands". <br>
 
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access. 
 
