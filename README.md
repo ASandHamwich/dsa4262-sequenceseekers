@@ -22,6 +22,16 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
 # Installing Prediction Software
 _This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._ 
 
+## Required Files from this Repositry to be Uploaded to AWS Project Storage
+1. `requirements.txt`
+2. `setup.sh`
+3. predictions (Please upload this folder as a whole to avoid confusion) <br>
+a) `prediction/prediction_assets`: contains the necessary assets for running the prediction model<br>
+b) `prediction/prediction_script`: contains the scripts for generating the predictions <br>
+c) `prediction/prediction_notebooks`: contains notebooks for generating the predictions <br>
+d) `prediction/sample_prediction`: sample data for testing <br>
+
+
 ## System Requirements
 This software requires an Ubuntu system to run. On an AWS remote instance, we recommend running a large instance with more CPU processing power - at least `t3.2xlarge`.
 
@@ -35,15 +45,6 @@ bash setup.sh
 ```
 
 This installs Python 3.8.10, as well as all the necessary packages needed for running the prediction software.
-
-## Installation of Prediction Software
-To install and use this prediction software, ensure that you pull the `prediction` directory from the repository.
-
-`prediction` contains these 4 folders:
-1. `prediction/prediction_assets`: contains the necessary assets for running the prediction model;
-2. `prediction/prediction_script`: contains the scripts for generating the predictions;
-3. `prediction/prediction_notebooks`: contains notebooks for generating the predictions;
-4. `prediction/sample_prediction`: sample data for testing.
 
 
 # Running Prediction Software
