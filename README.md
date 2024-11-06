@@ -89,6 +89,7 @@ python3 prediction-script.py <path-to-cleaned-data-csv-file>
 
 ### Output
 The data preparation step `data-prep.py` outputs the cleaned data CSV file `clean_data.csv` in the same subdirectory as the data JSON file.
+
 The prediction step `prediction-script.py` outputs 
 1. `pred_results.csv` - the prediction probability results in CSV format;
 2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity into the same subdirectory as `clean_data.csv`.
