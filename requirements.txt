@@ -7,6 +7,3 @@ matplotlib
 tensorflow
 scikit-learn
 
-
-curl -s https://get.nextflow.io | bash
-sudo ln -s /home/ubuntu/software/nextflow /usr/local/bin/nextflow

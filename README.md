@@ -18,7 +18,6 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
         - **[Input](#input)**<br>
         - **[Execution Commands](#execution-commands)**<br>
         - **[Output](#output)**<br>
-- **[Software License](#software-license)**<br>
 
 # Installing Prediction Software
 _This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._ 
@@ -27,7 +26,7 @@ _This installation guide recommends (and assumes) that you are running this soft
 This software requires an Ubuntu system to run. On an AWS remote instance, we recommend running a large instance with more CPU processing power - at least `t3.2xlarge`.
 
 ## Prerequisites Installation
-To install all necessary software and packages, ensure that `setup.sh` and `requirements.txt` are in the same directory. 
+Begin by pulling `setup.sh` and `requirements.txt` into the same directory. This is required to install all necessary software and packages.
 
 Run the following Shell script in your terminal as such: 
 
@@ -38,18 +37,19 @@ bash setup.sh
 This installs Python 3.8, as well as all the necessary packages needed for running the prediction software.
 
 ## Installation of Prediction Software
-To install and use this prediction software, ensure that you pull the following files from the `prediction` directory: 
-1. `prediction/prediction_assets`
-2. `prediction/prediction_script`
-3. `prediction/prediction_notebooks`
-4. `prediction/sample_prediction`
+To install and use this prediction software, ensure that you pull the `prediction` directory from the repository.
 
-_For ease of use, simply pull and use the whole `prediction` directory._
+`prediction` contains these 4 folders:
+1. `prediction/prediction_assets`: contains the necessary assets for running the prediction model;
+2. `prediction/prediction_script`: contains the scripts for generating the predictions;
+3. `prediction/prediction_notebooks`: contains notebooks for generating the predictions;
+4. `prediction/sample_prediction`: sample data for testing.
+
 
 # Running Prediction Software
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
 
-`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the file exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
+`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and `prediction_notebooks`.** Do not remove the items from any of these 3 folders; to run the software, navigate to the respective subdirectories. 
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
 
@@ -83,7 +83,8 @@ python3 prediction-script.py <path-to-cleaned-data-csv-file>
 The data preparation step `data-prep.py` outputs the cleaned data CSV file `clean_data.csv` in the same subdirectory as the data JSON file.
 The prediction step `prediction-script.py` outputs 
 1. `pred_results.csv` - the prediction probability results in CSV format;
-2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity
+2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity![d1](https://github.com/user-attachments/assets/118af245-b7b1-4bc9-b37d-df06fb95c2e8)
+
 into the same subdirectory as `clean_data.csv`.
 
 If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
@@ -97,13 +98,17 @@ The data preparation step `prediction-data-preprocessing.ipynb` takes in the dat
 First, navigate to the `prediction_notebooks` directory to access both `prediction-data-preprocessing.ipynb` and `prediction-notebook.ipynb`.
 
 Ensure that the paths of the data JSON file for `prediction-data-preprocessing.ipynb` and the cleaned data CSV file for `prediction-notebook.ipynb` correspond correctly to each file. 
-<img width="1070" alt="Screenshot 2024-11-05 at 11 39 17 PM" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
-<img width="1072" alt="Screenshot 2024-11-05 at 11 42 28 PM" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
+<p>
+    <img width="1070" alt="Data Path - Data Preprocessing Notebook" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
+    <em> Data Path - Data Preprocessing Notebook </em>
+</p>
+<p>
+    <img width="1072" alt="Data Path - Prediction Notebook" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
+    <em> Data Path - Prediction Notebook </em>
+</p>
 
 To run the commands, press the Run buttons on each Python cell in the notebooks. 
 ### Output
 `prediction-data-preprocessing.ipynb` creates the cleaned data CSV file in the same subdirectory as the initial data JSON file. 
 
 `prediction-notebook.ipynb` creates `pred_results.csv` in the same subdirectory as the cleaned data CSV file. 
-
-# Software License
