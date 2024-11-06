@@ -97,8 +97,14 @@ The data preparation step `prediction-data-preprocessing.ipynb` takes in the dat
 First, navigate to the `prediction_notebooks` directory to access both `prediction-data-preprocessing.ipynb` and `prediction-notebook.ipynb`.
 
 Ensure that the paths of the data JSON file for `prediction-data-preprocessing.ipynb` and the cleaned data CSV file for `prediction-notebook.ipynb` correspond correctly to each file. 
-<img width="1070" alt="Screenshot 2024-11-05 at 11 39 17 PM" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
-<img width="1072" alt="Screenshot 2024-11-05 at 11 42 28 PM" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
+<p>
+    <img width="1070" alt="Data Path - Data Preprocessing Notebook" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
+    <em> Data Path - Data Preprocessing Notebook </em>
+</p>
+<p>
+    <img width="1072" alt="Data Path - Prediction Notebook" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
+    <em> Data Path - Prediction Notebook </em>
+</p>
 
 To run the commands, press the Run buttons on each Python cell in the notebooks. 
 ### Output
