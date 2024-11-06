@@ -23,6 +23,7 @@ This project explores the use of Machine Learning methods to detect m6a RNA modi
 _This installation guide recommends (and assumes) that you are running this software on an AWS remote Ubuntu instance._ 
 
 ## Required Files from this Repositry to be Uploaded to AWS Project Storage
+Please pull the files below from GitHub and upload into your AWS Project Storage. 
 1. `requirements.txt`
 2. `setup.sh`
 3. `predictions` (Please upload this folder as a whole to avoid confusion) <br>
@@ -36,7 +37,7 @@ _This installation guide recommends (and assumes) that you are running this soft
 This software requires an Ubuntu system to run. On an AWS remote instance, we recommend running a large instance with more CPU processing power - at least `t3.2xlarge`.
 
 ## Prerequisites Installation
-Begin by pulling `setup.sh` and `requirements.txt` into the same directory. This is required to install all necessary software and packages.
+Please ensure that `setup.sh` and `requirements.txt` are in the same directory. This is required to install all necessary software and packages.
 
 Run the following Shell script in your terminal as such: 
 
@@ -48,7 +49,9 @@ This installs Python 3.8.10, as well as all the necessary packages needed for ru
 
 
 # Running Prediction Software
-To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
+If you have uploaded the predictions folder as a whole, this whole section should not be an issue and you may skip. <br>
+
+To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access. 
 
 `prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and `prediction_notebooks`.** 
 
