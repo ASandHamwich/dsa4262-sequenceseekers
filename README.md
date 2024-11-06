@@ -25,11 +25,11 @@ _This installation guide recommends (and assumes) that you are running this soft
 ## Required Files from this Repositry to be Uploaded to AWS Project Storage
 1. `requirements.txt`
 2. `setup.sh`
-3. predictions (Please upload this folder as a whole to avoid confusion) <br>
-a) `prediction/prediction_assets`: contains the necessary assets for running the prediction model<br>
-b) `prediction/prediction_script`: contains the scripts for generating the predictions <br>
-c) `prediction/prediction_notebooks`: contains notebooks for generating the predictions <br>
-d) `prediction/sample_prediction`: sample data for testing <br>
+3. `predictions` (Please upload this folder as a whole to avoid confusion) <br>
+    a) `prediction/prediction_assets`: contains the necessary assets for running the prediction model<br>
+    b) `prediction/prediction_script`: contains the scripts for generating the predictions <br>
+    c) `prediction/prediction_notebooks`: contains notebooks for generating the predictions <br>
+    d) `prediction/sample_prediction`: sample data for testing <br>
 
 
 ## System Requirements
