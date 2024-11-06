@@ -49,7 +49,7 @@ To install and use this prediction software, ensure that you pull the `predictio
 # Running Prediction Software
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
 
-`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and/or `prediction_notebooks`.**
+`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and `prediction_notebooks`.** Do not remove the items from any of these 3 folders; to run the software, navigate to the respective subdirectories. 
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
 
