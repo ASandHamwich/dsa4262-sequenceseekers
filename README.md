@@ -78,6 +78,7 @@ Activate the bash script with this command:
 ```
 bash predict.sh <path-to-json-file>
 ```
+Sample usage: `bash predict.sh ../sample_prediction/test_data.json`
 
 _(Optional)_
 If you wish to run each script separately, you may do so with
@@ -105,19 +106,19 @@ First, navigate to the `prediction_notebooks` directory to access both `predicti
 ```
 cd <relative-path>/prediction/prediction_notebooks
 ```
-Access `prediction-data-preprocessing.ipynb` to 
-
-Ensure that the paths of the data JSON file for `prediction-data-preprocessing.ipynb` and the cleaned data CSV file for `prediction-notebook.ipynb` correspond correctly to each file. 
+Access `prediction-data-preprocessing.ipynb` and run all the Python cells. Ensure that the path corresponds to the intended data JSON file. 
 <p>
     <img width="1070" alt="Data Path - Data Preprocessing Notebook" src="https://github.com/user-attachments/assets/b6113d8d-059d-42dd-b9e5-5361349bf3e7">
     <em> Data Path - Data Preprocessing Notebook </em>
 </p>
+
+Access `prediction-notebook.ipynb` and run all the Python cells. Ensure that the path correspond correctly to the cleaned data CSV file generated from `prediction-data-preprocessing.ipynb`. 
+
 <p>
     <img width="1072" alt="Data Path - Prediction Notebook" src="https://github.com/user-attachments/assets/1f594f09-36d0-4a71-ace8-94b0dfec69ce">
     <em> Data Path - Prediction Notebook </em>
 </p>
 
-To run the commands, press the Run buttons on each Python cell in the notebooks. 
 ### Output
 `prediction-data-preprocessing.ipynb` creates the cleaned data CSV file in the same subdirectory as the initial data JSON file. 
 
