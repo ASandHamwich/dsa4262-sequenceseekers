@@ -34,7 +34,7 @@ Run the following Shell script in your terminal as such:
 bash setup.sh
 ```
 
-This installs Python 3.8, as well as all the necessary packages needed for running the prediction software.
+This installs Python 3.8.10, as well as all the necessary packages needed for running the prediction software.
 
 ## Installation of Prediction Software
 To install and use this prediction software, ensure that you pull the `prediction` directory from the repository.
@@ -49,7 +49,9 @@ To install and use this prediction software, ensure that you pull the `predictio
 # Running Prediction Software
 To begin, ensure that you have your `data.json` file in its own subdirectory. The software will create outputs in the same directory as this file for ease of access.
 
-`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and `prediction_notebooks`.** Do not remove the items from any of these 3 folders; to run the software, navigate to the respective subdirectories. 
+`prediction_assets` is necessary for the scripts and notebooks to work; do **ensure that the folder exists in the same subdirectory as `prediction_scripts` and `prediction_notebooks`.** 
+
+**Do not remove the items from any of these 3 folders;** to run the software, navigate to the respective subdirectories. 
 
 There are two methods of running the prediction software: either by using scripts or Python notebooks. For efficiency, we recommend using the scripts; however, if you would like to view each step of the prediction process, you are encouraged to use the Python notebooks. 
 
@@ -67,7 +69,12 @@ _For those new to running Jupyter on remote instances, an additional README.md h
 The data preparation step `data-prep.py` takes in the data in a JSON format and processes it, which is then piped as a CSV file into the `prediction-script.py` for predicting.
 
 ### Execution Commands
-To run the full workflow, navigate to the `prediction_script` directory and activate the bash script with this command:
+To run the full workflow, navigate to the `prediction_script` directory. 
+```
+cd <relative-path>/prediction/prediction_script
+```
+
+Activate the bash script with this command:
 ```
 bash predict.sh <path-to-json-file>
 ```
@@ -83,9 +90,8 @@ python3 prediction-script.py <path-to-cleaned-data-csv-file>
 The data preparation step `data-prep.py` outputs the cleaned data CSV file `clean_data.csv` in the same subdirectory as the data JSON file.
 The prediction step `prediction-script.py` outputs 
 1. `pred_results.csv` - the prediction probability results in CSV format;
-2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity![d1](https://github.com/user-attachments/assets/118af245-b7b1-4bc9-b37d-df06fb95c2e8)
-
-into the same subdirectory as `clean_data.csv`.
+2. `predicted_prob_graph.png` - a bar graph visualisation of the results probablity into the same subdirectory as `clean_data.csv`.
+![d1](https://github.com/user-attachments/assets/118af245-b7b1-4bc9-b37d-df06fb95c2e8)
 
 If running via the bash script, all files will be found in the same subdirectory as the initial data JSON file.
 
@@ -96,6 +102,10 @@ The data preparation step `prediction-data-preprocessing.ipynb` takes in the dat
 
 ### Execution Commands
 First, navigate to the `prediction_notebooks` directory to access both `prediction-data-preprocessing.ipynb` and `prediction-notebook.ipynb`.
+```
+cd <relative-path>/prediction/prediction_notebooks
+```
+Access `prediction-data-preprocessing.ipynb` to 
 
 Ensure that the paths of the data JSON file for `prediction-data-preprocessing.ipynb` and the cleaned data CSV file for `prediction-notebook.ipynb` correspond correctly to each file. 
 <p>
